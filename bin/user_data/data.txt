@@ -1,0 +1,11 @@
+Ken Estremadura;123412341234;0000;1200.0;+639560539437;ken@gmail.com;Rosario, Batangas;1234-1234-1234;1;Open;
+Ling Ban De Ramas;567856785678;5678;5178.0;+639921112222;zing@gmail.com;Makati;5678-5678-5678;1;Closed;
+Zilong Main;789078907890;7890;7500.0;+639123334444;fei@gmail.com;Zambales;7890-7890-7890;0;Open;
+Gru Ambakhar;432143214321;4321;4321.0;+639121231234;gru@gmai.com;Nasugbu;4321-4321-4321;0;Open;
+Angelo Padilla;123312341234;1234;6500.99;+639123412341;padilla@gmail.com;Brgy. Pogi;1233-1234-1234;0;Open;
+Alliana Batumbakal;789700407894;1234;5600.99;+639123412333;alliana@gmail.com;Brgy. Wish 107.5;7897-0040-7894;0;Open;
+Angelo Herrera;612024014681;4321;800.0;+639926781234;angelo@gmail.com;Batangas City;6120-2401-4681;0;Open;
+Michael Jordan;624908427535;0000;799.0;+639123123123;mj@gmail.com;Brgy. Karsada;6249-0842-7535;0;Open;
+Rassel Sonny;811679126530;0000;500.0;+639123213213;rassel@gmail.com;Cuta;8116-7912-6530;0;Open;
+Mark Batumbakal;530369989809;0000;1278.0;+639213213121;@ub.edu.ph;Brgy. Love Story;5303-6998-9809;0;Open;
+Ken Uy;536418470997;0000;501.0;+639123123123;@gmail.com;Brgy. Rosario;5364-1847-0997;0;Open;
