@@ -9,7 +9,7 @@
             "name": "Run App.java",
             "request": "launch",
             "mainClass": "com.myproject.app.App",
-            "vmArgs": "--module-path C:/Users/63950/Desktop/VScode/javafx-sdk-25.0.1/lib --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path C:/Users/63950/Desktop/VScode/JavaProjects/CC104_Final_Project/lib/java-fx/lib --add-modules javafx.controls,javafx.fxml"
         }
     ]
 }

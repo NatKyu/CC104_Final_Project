@@ -8,7 +8,7 @@
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
-        "C:\\Users\\63950\\Desktop\\VScode\\javafx-sdk-25.0.1\\lib\\*.jar"
+        "C:\\Users\\63950\\Desktop\\VScode\\JavaProjects\\CC104_Final_Project\\lib\\java-fx\\lib\\*.jar"
     ],
     "editor.insertSpaces": false,
     "editor.tabSize": 4,
