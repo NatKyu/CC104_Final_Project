@@ -36,6 +36,13 @@ public class adminShowTransactionsHistory {
 	
 	@FXML
 	public void initialize(){
+
+		table.widthProperty().addListener((obs, oldVal, newVal) -> {
+        		table.lookupAll(".column-header").forEach(header -> {
+            	header.setOnMouseDragged(event -> event.consume());
+        	});
+    	});
+
 		nameColumn.setCellValueFactory(new PropertyValueFactory<>("acctName"));
 		accountNumberColumn.setCellValueFactory(new PropertyValueFactory<>("acctNumberWithDash"));
 

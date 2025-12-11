@@ -48,6 +48,12 @@ public class adminTransactionsHistory {
     @FXML
     public void initialize(){
 
+        transactionTable.widthProperty().addListener((obs, oldVal, newVal) -> {
+        		transactionTable.lookupAll(".column-header").forEach(header -> {
+            	header.setOnMouseDragged(event -> event.consume());
+        	});
+    	});
+
         dateColumn.setCellValueFactory(new PropertyValueFactory<>("date"));
         timeColumn.setCellValueFactory(new PropertyValueFactory<>("time"));
         withdrawColumn.setCellValueFactory(new PropertyValueFactory<>("withdraw"));
@@ -57,7 +63,7 @@ public class adminTransactionsHistory {
         filterType.getItems().addAll("All", "Withdraw", "Deposit");
         filterType.setValue("All");
 
-		username.setText("\"" + currUser.getAcctName() + "\"");
+		username.setText(currUser.getAcctName());
 
         Setters.centerColumnNumber(dateColumn);
         Setters.centerColumnNumber(timeColumn);

@@ -42,6 +42,13 @@ public class adminShowResetPin {
 	
 	@FXML
 	public void initialize(){
+
+		table.widthProperty().addListener((obs, oldVal, newVal) -> {
+        		table.lookupAll(".column-header").forEach(header -> {
+            	header.setOnMouseDragged(event -> event.consume());
+        	});
+    	});
+
 		nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
 		accountNumberColumn.setCellValueFactory(new PropertyValueFactory<>("accountNumberWithDash"));
 

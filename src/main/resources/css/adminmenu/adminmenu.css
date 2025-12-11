@@ -5,7 +5,6 @@
     background-color: #F1F5F9;
 
     text-color: #0F172A;
-	text-font: "Inter";
 }
 
 /* UI Background */
@@ -18,7 +17,7 @@
 .label{
 	-fx-text-fill: text-color;
 	-fx-label-padding: 2px;
-	-fx-font-family: text-font;
+	-fx-font-family: "Poppins";
 }
 
 
@@ -30,23 +29,10 @@
 	-fx-background-radius: 8px;
 	-fx-padding: 5px 20px;
 	-fx-cursor: hand;
+	-fx-fonr-family: "Open Sans";
 
 }
 
 .button:hover {
     -fx-background-color: accent-color;
-}
-
-#loginButton{
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 4, 0, 0, 1);
-}
-
-#forgotPin{
-	-fx-background-color: background-color;
-	-fx-text-fill: black;
-}
-
-#createAccount{
-	-fx-background-color: background-color;
-	-fx-text-fill: black;
 }

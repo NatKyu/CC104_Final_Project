@@ -7,11 +7,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.usermenu.userSettingsCloseAccount">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" stylesheets="@../../css/usermenu/usersettingscloseaccount.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.usermenu.userSettingsCloseAccount">
    <children>
-      <Label alignment="CENTER" layoutY="105.0" prefHeight="88.0" prefWidth="800.0" text="Close Account">
+      <Label alignment="CENTER" layoutY="110.0" prefHeight="88.0" prefWidth="800.0" text="Close Account">
          <font>
-            <Font name="Arial Bold" size="45.0" />
+            <Font name="Arial Bold" size="60.0" />
          </font>
       </Label>
       <Label layoutX="64.0" layoutY="329.0">
@@ -24,29 +24,29 @@
             <Font name="Arial Bold" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="submitButton" alignment="CENTER" focusTraversable="false" layoutX="300.0" layoutY="697.0" mnemonicParsing="false" onAction="#submitButtonClick" prefHeight="37.0" prefWidth="200.0" text="Submit">
+      <Button fx:id="submitButton" alignment="CENTER" focusTraversable="false" layoutX="308.0" layoutY="793.0" mnemonicParsing="false" onAction="#submitButtonClick" prefHeight="37.0" prefWidth="200.0" text="Submit">
          <font>
             <Font name="Arial Bold" size="20.0" />
          </font>
       </Button>
-      <Label layoutX="75.0" layoutY="224.0" text="Reason for Closing:">
+      <Label layoutX="75.0" layoutY="229.0" text="Reason:">
          <font>
-            <Font name="Arial Bold" size="20.0" />
+            <Font name="Arial Bold" size="26.0" />
          </font>
       </Label>
-      <TextField fx:id="pinField" focusTraversable="false" layoutX="275.0" layoutY="593.0" prefHeight="23.0" prefWidth="250.0">
+      <TextField fx:id="pinField" alignment="CENTER" focusTraversable="false" layoutX="282.0" layoutY="689.0" prefHeight="23.0" prefWidth="250.0">
          <font>
-            <Font size="20.0" />
+            <Font size="25.0" />
          </font>
       </TextField>
-      <Label layoutX="381.0" layoutY="563.0" text="Pin:">
+      <Label layoutX="382.0" layoutY="647.0" text="Pin:">
          <font>
-            <Font name="Arial Bold" size="20.0" />
+            <Font name="Arial Bold" size="26.0" />
          </font>
       </Label>
-      <TextArea fx:id="reasonText" focusTraversable="false" layoutX="75.0" layoutY="254.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="300.0" prefWidth="650.0" promptText="Enter..." wrapText="true">
+      <TextArea fx:id="reasonText" focusTraversable="false" layoutX="76.0" layoutY="271.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="349.0" prefWidth="650.0" wrapText="true">
          <font>
-            <Font size="20.0" />
+            <Font size="25.0" />
          </font></TextArea>
    </children>
 </AnchorPane>

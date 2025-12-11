@@ -43,4 +43,3 @@ public class userBalanceMenuController {
         stage.show();
     }
 }
-// 789700407894

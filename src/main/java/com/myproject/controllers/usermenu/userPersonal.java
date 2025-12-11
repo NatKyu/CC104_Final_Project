@@ -79,6 +79,11 @@ public class userPersonal {
                 return;
         }
 
+        if(contactField.getText().length() != 9){
+            ShowOnScreen.showError("Invalid contact number.");
+            return;
+        }
+
         if(pinField.getText().length() != 4){
             ShowOnScreen.showError("Pin must be 4 Digits.");
             return;

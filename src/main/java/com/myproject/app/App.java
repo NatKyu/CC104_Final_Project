@@ -2,7 +2,7 @@ package com.myproject.app;
 
 import com.myproject.utils.*;
 import com.myproject.utils.data.AdminInfo;
-
+    
 import java.util.Optional;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

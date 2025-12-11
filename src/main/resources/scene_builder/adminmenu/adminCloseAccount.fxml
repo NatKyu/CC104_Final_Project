@@ -6,16 +6,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.adminmenu.adminCloseAccount">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" stylesheets="@../../css/adminmenu/admincloseaccount.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.adminmenu.adminCloseAccount">
    <children>
-      <Label alignment="CENTER" layoutY="85.0" prefHeight="41.0" prefWidth="800.0" text="Close Account Request">
+      <Label alignment="CENTER" layoutY="80.0" prefHeight="41.0" prefWidth="800.0" text="Close Account">
          <font>
-            <Font name="Arial Bold" size="35.0" />
-         </font>
-      </Label>
-      <Label layoutX="64.0" layoutY="329.0">
-         <font>
-            <Font name="Arial Italic" size="25.0" />
+            <Font name="Arial Bold" size="60.0" />
          </font>
       </Label>
       <Button focusTraversable="false" layoutX="27.0" layoutY="24.0" mnemonicParsing="false" onAction="#switchToAdminMenu" prefHeight="18.0" prefWidth="100.0" text="Back" textAlignment="CENTER">
@@ -23,29 +18,39 @@
             <Font name="Arial Bold" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="closeAccountButton" alignment="CENTER" focusTraversable="false" layoutX="300.0" layoutY="752.0" mnemonicParsing="false" onAction="#closeAccountButtonClick" prefHeight="37.0" prefWidth="200.0" text="Close Account">
+      <Button fx:id="closeAccountButton" alignment="CENTER" focusTraversable="false" layoutX="300.0" layoutY="829.0" mnemonicParsing="false" onAction="#closeAccountButtonClick" prefHeight="37.0" prefWidth="200.0" text="Close Account">
          <font>
             <Font name="Arial Bold" size="20.0" />
          </font>
       </Button>
-      <TextField fx:id="reasonField" alignment="TOP_LEFT" editable="false" focusTraversable="false" layoutX="60.0" layoutY="329.0" prefHeight="350.0" prefWidth="680.0">
+      <TextField fx:id="reasonField" alignment="TOP_LEFT" editable="false" focusTraversable="false" layoutX="60.0" layoutY="388.0" prefHeight="390.0" prefWidth="680.0">
          <font>
             <Font size="25.0" />
          </font>
       </TextField>
-      <Label layoutX="64.0" layoutY="306.0" text="Reason for account closing:">
+      <Label layoutX="64.0" layoutY="345.0" text="Reason:">
          <font>
-            <Font name="Arial Bold" size="20.0" />
+            <Font name="Arial Bold" size="26.0" />
          </font>
       </Label>
-      <Label fx:id="accountNumber" alignment="CENTER" layoutY="200.0" prefHeight="36.0" prefWidth="800.0" text="(Account Number)">
+      <Label alignment="CENTER" layoutX="64.0" layoutY="292.0" prefHeight="38.0" prefWidth="221.0" text="Account Number:">
          <font>
-            <Font name="Arial" size="30.0" />
+            <Font name="Arial Bold" size="26.0" />
          </font>
       </Label>
-      <Label fx:id="name" alignment="CENTER" layoutY="150.0" prefHeight="36.0" prefWidth="800.0" text="&quot;Name&quot;">
+      <Label alignment="CENTER" layoutX="64.0" layoutY="228.0" prefHeight="45.0" prefWidth="86.0" text="Name:">
          <font>
-            <Font name="Arial" size="30.0" />
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameField" layoutX="157.0" layoutY="230.0" prefHeight="42.0" prefWidth="583.0" text="username">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="accountNumberField" layoutX="291.0" layoutY="292.0" prefHeight="38.0" prefWidth="449.0" text="useraccountnumber">
+         <font>
+            <Font size="25.0" />
          </font>
       </Label>
    </children>

@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.adminmenu.adminTransactionsHistory">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" stylesheets="@../../css/adminmenu/admintransactionhistory.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.adminmenu.adminTransactionsHistory">
    <children>
-      <Label alignment="CENTER" layoutY="123.0" prefHeight="41.0" prefWidth="800.0" text="Transaction History">
+      <Label alignment="CENTER" layoutY="80.0" prefHeight="41.0" prefWidth="800.0" text="Transaction History">
          <font>
-            <Font name="Arial Bold" size="40.0" />
+            <Font name="Arial Bold" size="60.0" />
          </font>
       </Label>
       <Label layoutX="64.0" layoutY="329.0">
@@ -20,7 +20,7 @@
             <Font name="Arial Italic" size="25.0" />
          </font>
       </Label>
-      <TableView fx:id="transactionTable" focusTraversable="false" layoutX="25.0" layoutY="244.0" prefHeight="700.0" prefWidth="750.0">
+      <TableView fx:id="transactionTable" focusTraversable="false" layoutX="25.0" layoutY="258.0" prefHeight="685.0" prefWidth="750.0">
          <columns>
             <TableColumn fx:id="dateColumn" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Date" />
             <TableColumn fx:id="timeColumn" editable="false" prefWidth="115.0" resizable="false" sortable="false" text="Time" />
@@ -32,15 +32,20 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <ComboBox fx:id="filterType" focusTraversable="false" layoutX="27.0" layoutY="201.0" onAction="#loadTransactions" prefHeight="18.0" prefWidth="140.0" />
+      <ComboBox fx:id="filterType" focusTraversable="false" layoutX="27.0" layoutY="201.0" onAction="#loadTransactions" prefHeight="36.0" prefWidth="140.0" />
       <Button focusTraversable="false" layoutX="27.0" layoutY="24.0" mnemonicParsing="false" onAction="#switchToAdminMenu" prefHeight="11.0" prefWidth="100.0" text="Back" textAlignment="CENTER">
          <font>
             <Font name="Arial Bold" size="20.0" />
          </font>
       </Button>
-      <Label fx:id="username" alignment="CENTER" layoutY="81.0" prefHeight="36.0" prefWidth="800.0" text="Name">
+      <Label fx:id="username" layoutX="269.0" layoutY="199.0" prefHeight="45.0" prefWidth="499.0" text="Name">
          <font>
-            <Font name="Arial Bold" size="30.0" />
+            <Font name="Arial" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="200.0" text="Name:">
+         <font>
+            <Font name="System Bold" size="26.0" />
          </font>
       </Label>
    </children>

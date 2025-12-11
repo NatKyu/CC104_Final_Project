@@ -1,0 +1,74 @@
+* {
+    primary-color: #1E3A8A;
+    primary-light: #3B82F6;
+    accent-color: #60A5FA;
+    background-color: #F1F5F9;
+    text-color: #0F172A;
+}
+
+/* UI Background */
+.root{
+	-fx-background-color: background-color;
+}
+
+
+/* Labels */
+.label{
+	-fx-text-fill: text-color;
+	-fx-label-padding: 2px;
+	-fx-font-family: "Inter";
+}
+
+#num{
+    -fx-font-family: "Roboto";
+}
+
+/* Buttons */
+.button{
+	-fx-background-color: primary-light;
+	-fx-text-fill: white;
+	-fx-background-radius: 8px;
+	-fx-padding: 5px 20px;
+	-fx-cursor: hand;
+
+}
+
+.button:hover {
+    -fx-background-color: accent-color;
+}
+
+/* TextFields */
+.text-field {
+    -fx-background-radius: 6px;
+    -fx-padding: 7px 10px;
+    -fx-border-color: #111111;
+    -fx-border-width: 1.2px;
+    -fx-border-radius: 6px;
+    -fx-background-color: #ffffff;
+}
+
+.text-field:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+#nameField{
+    -fx-font-family: "Open Sans";
+    -fx-font-size: 25px;
+}
+
+#emailField{
+    -fx-font-family: "Open Sans";
+    -fx-font-size: 25px;
+}
+
+#addressField{
+	-fx-font-family: "Open Sans";
+    -fx-font-size: 25px;
+}
+
+#contactField{
+    -fx-border-color: transparent;
+    -fx-font-size: 26px;
+    -fx-font-family: "Roboto";
+}

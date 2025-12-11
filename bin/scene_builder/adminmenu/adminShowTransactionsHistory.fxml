@@ -7,11 +7,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.adminmenu.adminShowTransactionsHistory">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" stylesheets="@../../css/adminmenu/adminshowaccounts.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.adminmenu.adminShowTransactionsHistory">
    <children>
-      <Label alignment="CENTER" layoutY="98.0" prefHeight="66.0" prefWidth="800.0" text="Users Transactions History" textAlignment="JUSTIFY">
+      <Label alignment="CENTER" layoutY="90.0" prefHeight="0.0" prefWidth="800.0" text="Users Transactions" textAlignment="JUSTIFY">
          <font>
-            <Font name="System Bold" size="45.0" />
+            <Font name="System Bold" size="60.0" />
          </font>
       </Label>
       <Button focusTraversable="false" layoutX="27.0" layoutY="24.0" mnemonicParsing="false" onAction="#switchToAdminMenu" prefHeight="21.0" prefWidth="100.0" text="Back" textAlignment="CENTER">
@@ -19,7 +19,7 @@
             <Font name="Arial Bold" size="20.0" />
          </font>
       </Button>
-      <TableView fx:id="table" focusTraversable="false" layoutX="25.0" layoutY="219.0" prefHeight="700.0" prefWidth="750.0">
+      <TableView fx:id="table" focusTraversable="false" layoutX="25.0" layoutY="220.0" prefHeight="685.0" prefWidth="750.0">
          <columns>
             <TableColumn fx:id="nameColumn" editable="false" prefWidth="400.0" resizable="false" sortable="false" text="Name" />
             <TableColumn fx:id="accountNumberColumn" editable="false" prefWidth="350.0" resizable="false" sortable="false" text="Account Number" />

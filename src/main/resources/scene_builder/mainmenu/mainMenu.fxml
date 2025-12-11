@@ -8,12 +8,12 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" stylesheets="@../../css/mainmenu/mainmenu.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.mainmenu.mainMenuController">
    <children>
-      <Button fx:id="createAccount" focusTraversable="false" layoutX="320.0" layoutY="557.0" mnemonicParsing="false" onAction="#switchToCreateAccount" prefHeight="17.0" prefWidth="160.0" text="Create Account">
+      <Button fx:id="createAccount" focusTraversable="false" layoutX="325.0" layoutY="585.0" mnemonicParsing="false" onAction="#switchToCreateAccount" prefHeight="27.0" prefWidth="151.0" text="Create Account">
          <font>
             <Font name="Arial Bold" size="15.0" />
          </font>
       </Button>
-      <Button fx:id="loginButton" focusTraversable="false" layoutX="275.0" layoutY="509.0" mnemonicParsing="false" onAction="#loginButtonClick" prefHeight="23.0" prefWidth="250.0" text="Login">
+      <Button fx:id="loginButton" focusTraversable="false" layoutX="275.0" layoutY="539.0" mnemonicParsing="false" onAction="#loginButtonClick" prefHeight="23.0" prefWidth="250.0" text="Login">
          <font>
             <Font name="Arial Bold" size="25.0" />
          </font>
@@ -23,27 +23,27 @@
             <Font name="System Bold" size="60.0" />
          </font>
       </Label>
-      <TextField fx:id="accountNumber" alignment="CENTER" focusTraversable="false" layoutX="175.0" layoutY="289.0" prefHeight="54.0" prefWidth="450.0">
+      <TextField fx:id="accountNumber" alignment="CENTER" focusTraversable="false" layoutX="175.0" layoutY="319.0" prefHeight="54.0" prefWidth="450.0">
          <font>
             <Font size="25.0" />
          </font>
       </TextField>
-      <Label alignment="CENTER" layoutY="253.0" prefHeight="23.0" prefWidth="800.0" text="Account Number:">
+      <Label alignment="CENTER" layoutY="283.0" prefHeight="23.0" prefWidth="800.0" text="Account Number:">
          <font>
             <Font name="Arial Bold" size="25.0" />
          </font>
       </Label>
-      <TextField fx:id="pin" alignment="CENTER" focusTraversable="false" layoutX="275.0" layoutY="390.0" prefHeight="52.0" prefWidth="250.0">
+      <TextField fx:id="pin" alignment="CENTER" focusTraversable="false" layoutX="275.0" layoutY="420.0" prefHeight="52.0" prefWidth="250.0">
          <font>
             <Font size="25.0" />
          </font>
       </TextField>
-      <Label alignment="CENTER" layoutY="353.0" prefHeight="23.0" prefWidth="800.0" text="Pin:">
+      <Label alignment="CENTER" layoutY="383.0" prefHeight="23.0" prefWidth="800.0" text="Pin:">
          <font>
             <Font name="Arial Bold" size="25.0" />
          </font>
       </Label>
-      <Button fx:id="forgotPin" focusTraversable="false" layoutX="320.0" layoutY="458.0" mnemonicParsing="false" onAction="#switchToForgotPassword" prefHeight="17.0" prefWidth="160.0" text="Forgot Pin">
+      <Button fx:id="forgotPin" focusTraversable="false" layoutX="342.0" layoutY="480.0" mnemonicParsing="false" onAction="#switchToForgotPassword" prefHeight="27.0" prefWidth="116.0" text="Forgot Pin">
          <font>
             <Font name="Arial Bold" size="15.0" />
          </font>

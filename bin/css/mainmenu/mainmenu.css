@@ -5,7 +5,6 @@
     background-color: #F1F5F9;
 
     text-color: #0F172A;
-	text-font: "Inter";
 }
 
 /* UI Background */
@@ -18,10 +17,11 @@
 .label{
 	-fx-text-fill: text-color;
 	-fx-label-padding: 2px;
-	-fx-font-family: text-font;
+	-fx-font-family: "Inter SemiBold";
 }
 
 #titleLabel{
+	-fx-font-family: "Poppins";
 	-fx-font-size: 90;
 	-fx-font-weight: bold;
 	-fx-text-fill: #111827;

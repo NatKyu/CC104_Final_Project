@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.usermenu.userTransactionsMenuController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" stylesheets="@../../css/usermenu/usertransactions.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.usermenu.userTransactionsMenuController">
    <children>
       <Label alignment="CENTER" layoutY="80.0" prefHeight="88.0" prefWidth="800.0" text="Transaction History">
          <font>
-            <Font name="Arial Bold" size="45.0" />
+            <Font name="Arial Bold" size="60.0" />
          </font>
       </Label>
       <Label layoutX="64.0" layoutY="329.0">
@@ -20,7 +20,7 @@
             <Font name="Arial Italic" size="25.0" />
          </font>
       </Label>
-      <TableView fx:id="transactionTable" focusTraversable="false" layoutX="22.0" layoutY="216.0" prefHeight="700.0" prefWidth="750.0">
+      <TableView fx:id="transactionTable" focusTraversable="false" layoutX="22.0" layoutY="258.0" prefHeight="685.0" prefWidth="750.0">
         <columns>
           <TableColumn fx:id="dateColumn" editable="false" prefWidth="140.0" resizable="false" sortable="false" text="Date" />
             <TableColumn fx:id="timeColumn" editable="false" prefWidth="115.0" resizable="false" sortable="false" text="Time" />
@@ -32,7 +32,7 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <ComboBox fx:id="filterType" focusTraversable="false" layoutX="22.0" layoutY="178.0" onAction="#loadTransactions" prefHeight="18.0" prefWidth="140.0" />
+      <ComboBox fx:id="filterType" focusTraversable="false" layoutX="22.0" layoutY="201.0" onAction="#loadTransactions" prefHeight="21.0" prefWidth="140.0" />
       <Button focusTraversable="false" layoutX="27.0" layoutY="24.0" mnemonicParsing="false" onAction="#switchToUserMenu" prefHeight="11.0" prefWidth="100.0" text="Back" textAlignment="CENTER">
          <font>
             <Font name="Arial Bold" size="20.0" />

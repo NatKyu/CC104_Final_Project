@@ -5,7 +5,6 @@
     background-color: #F1F5F9;
 
     text-color: #0F172A;
-	text-font: "Inter";
 }
 
 /* UI Background */
@@ -18,7 +17,11 @@
 .label{
 	-fx-text-fill: text-color;
 	-fx-label-padding: 2px;
-	-fx-font-family: text-font;
+	-fx-font-family: "Inter";
+}
+
+#num{
+    -fx-font-family: "Roboto";
 }
 
 
@@ -52,22 +55,23 @@
 }
 
 #nameField{
-    -fx-font-family: "Inter Semibold";
+    -fx-font-family: "Open Sans";
     -fx-font-size: 25px;
 }
 
 #emailField{
-    -fx-font-family: "Inter Semibold";
+    -fx-font-family: "Open Sans";
     -fx-font-size: 25px;
 }
 
 #addressField{
-	-fx-font-family: "Inter Semibold";
+	-fx-font-family: "Open Sans";
     -fx-font-size: 25px;
 }
 
 #contactField{
-    -fx-font-size: 25px;
+    -fx-border-color: transparent;
+    -fx-font-size: 30px;
     -fx-font-family: "Roboto";
 }
 

@@ -30,9 +30,9 @@ public class adminCloseAccount {
 	private UserInfo curr = adminShowCloseAccount.selectedAccount;
 
     @FXML
-    private Label name;
+    private Label nameField;
     @FXML
-    private Label accountNumber;
+    private Label accountNumberField;
     @FXML
     private TextField reasonField;
     @FXML
@@ -42,8 +42,8 @@ public class adminCloseAccount {
     public void initialize() {
 		temp = Checking.getUserCloseAccount(curr.getAcctNumber());
 
-		name.setText( "\"" + curr.getAcctName() + "\"");
-		accountNumber.setText("(" + curr.getAcctNumberWithDash() + ")");
+		nameField.setText(curr.getAcctName());
+		accountNumberField.setText(curr.getAcctNumberWithDash());
 		
 		reasonField.setText("		" + temp.getMessage());
     }
@@ -54,7 +54,7 @@ public class adminCloseAccount {
 
         App.adminCloseAccountMessages.deleteByAccountNumber(curr.getAcctNumber());
 
-        System.out.printf("--- Account Closed \"%s\" (%s) ---\n\n", name.getText(), accountNumber.getText());
+        System.out.printf("--- Account Closed \"%s\" (%s) ---\n\n", nameField.getText(), accountNumberField.getText());
 
         showSuccess(event);
     }

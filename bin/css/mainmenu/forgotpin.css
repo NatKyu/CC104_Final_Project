@@ -5,7 +5,6 @@
     background-color: #F1F5F9;
 
     text-color: #0F172A;
-	text-font: "Inter";
 }
 
 
@@ -18,7 +17,7 @@
 .label{     /* Labels */
 	-fx-text-fill: text-color;
 	-fx-label-padding: 2px;
-	-fx-font-family: text-font;
+	-fx-font-family: "Inter";
 }
 
 
@@ -58,11 +57,11 @@
 }
 
 #nameField{
-    -fx-font-family: "Inter Semibold";
+    -fx-font-family: "Open Sans";
     -fx-font-size: 25px;
 }
 
 #emailField{
-    -fx-font-family: "Inter Semibold";
+    -fx-font-family: "Open Sans";
     -fx-font-size: 25px;
 }
