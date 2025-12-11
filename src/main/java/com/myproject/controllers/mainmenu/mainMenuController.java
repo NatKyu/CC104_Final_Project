@@ -1,12 +1,11 @@
 package com.myproject.controllers.mainmenu;
 
-import java.io.IOException;
-import java.util.Optional;
-
 import com.myproject.utils.Checking;
 import com.myproject.utils.ShowOnScreen;
 import com.myproject.utils.data.UserInfo;
 
+import java.io.IOException;
+import java.util.Optional;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -51,7 +50,7 @@ public class mainMenuController {
     @FXML
     public void loginButtonClick(ActionEvent event){
 
-        if(accountNumber.getText().equals("010101")){
+        if(accountNumber.getText().equals("121212")){
             adminAccess(event);
             return;
         }

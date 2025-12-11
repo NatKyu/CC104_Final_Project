@@ -59,11 +59,11 @@ public class adminTransactionsHistory {
 
 		username.setText("\"" + currUser.getAcctName() + "\"");
 
-        Setters.centerColumnTransactions(dateColumn);
-        Setters.centerColumnTransactions(timeColumn);
-        Setters.centerColumnTransactions(withdrawColumn);
-        Setters.centerColumnTransactions(depositColumn);
-        Setters.centerColumnTransactions(balanceColumn);
+        Setters.centerColumnNumber(dateColumn);
+        Setters.centerColumnNumber(timeColumn);
+        Setters.centerColumnNumber(withdrawColumn);
+        Setters.centerColumnNumber(depositColumn);
+        Setters.centerColumnNumber(balanceColumn);
 
         loadTransactions();
     }

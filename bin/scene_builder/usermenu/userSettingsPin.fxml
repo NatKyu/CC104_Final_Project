@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.usermenu.userSettingsChangePin">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.usermenu.userSettingsChangePin">
    <children>
-      <Label alignment="CENTER" layoutY="112.0" prefHeight="88.0" prefWidth="700.0" text="Change Pin">
+      <Label alignment="CENTER" layoutY="112.0" prefHeight="88.0" prefWidth="800.0" text="Change Pin">
          <font>
             <Font name="Arial Bold" size="45.0" />
          </font>
@@ -23,37 +23,37 @@
             <Font name="Arial Bold" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="submitButton" alignment="CENTER" focusTraversable="false" layoutX="252.0" layoutY="533.0" mnemonicParsing="false" onAction="#submitButtonClick" prefHeight="37.0" prefWidth="200.0" text="Submit">
+      <Button fx:id="submitButton" alignment="CENTER" focusTraversable="false" layoutX="300.0" layoutY="534.0" mnemonicParsing="false" onAction="#submitButtonClick" prefHeight="37.0" prefWidth="200.0" text="Submit">
          <font>
             <Font name="Arial Bold" size="20.0" />
          </font>
       </Button>
-      <TextField fx:id="newPinField" alignment="CENTER" focusTraversable="false" layoutX="209.0" layoutY="350.0" prefHeight="44.0" prefWidth="285.0">
+      <TextField fx:id="newPinField" alignment="CENTER" focusTraversable="false" layoutX="257.0" layoutY="351.0" prefHeight="44.0" prefWidth="285.0">
          <font>
             <Font size="20.0" />
          </font>
       </TextField>
-      <Label layoutX="308.0" layoutY="325.0" text="New Pin:">
+      <Label layoutX="356.0" layoutY="326.0" text="New Pin:">
          <font>
             <Font name="Arial Bold" size="20.0" />
          </font>
       </Label>
-      <TextField fx:id="reEnterNewPinField" alignment="CENTER" focusTraversable="false" layoutX="211.0" layoutY="440.0" prefHeight="44.0" prefWidth="285.0">
+      <TextField fx:id="reEnterNewPinField" alignment="CENTER" focusTraversable="false" layoutX="259.0" layoutY="441.0" prefHeight="44.0" prefWidth="285.0">
          <font>
             <Font size="20.0" />
          </font>
       </TextField>
-      <Label layoutX="252.0" layoutY="415.0" text="Enter New Pin Again:">
+      <Label layoutX="300.0" layoutY="416.0" text="Enter New Pin Again:">
          <font>
             <Font name="Arial Bold" size="20.0" />
          </font>
       </Label>
-      <TextField fx:id="currentPinField" alignment="CENTER" focusTraversable="false" layoutX="211.0" layoutY="260.0" prefHeight="44.0" prefWidth="285.0">
+      <TextField fx:id="currentPinField" alignment="CENTER" focusTraversable="false" layoutX="259.0" layoutY="261.0" prefHeight="44.0" prefWidth="285.0">
          <font>
             <Font size="20.0" />
          </font>
       </TextField>
-      <Label layoutX="267.0" layoutY="235.0" text="Enter Current Pin:">
+      <Label layoutX="315.0" layoutY="236.0" text="Enter Current Pin:">
          <font>
             <Font name="Arial Bold" size="20.0" />
          </font>

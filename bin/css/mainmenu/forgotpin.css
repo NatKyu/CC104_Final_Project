@@ -1,0 +1,68 @@
+* {
+    primary-color: #1E3A8A;
+    primary-light: #3B82F6;
+    accent-color: #60A5FA;
+    background-color: #F1F5F9;
+
+    text-color: #0F172A;
+	text-font: "Inter";
+}
+
+
+.root{      /* UI Background */
+	-fx-background-color: background-color;
+}
+
+
+
+.label{     /* Labels */
+	-fx-text-fill: text-color;
+	-fx-label-padding: 2px;
+	-fx-font-family: text-font;
+}
+
+
+
+.button{    /* Buttons */
+	-fx-background-color: primary-light;
+	-fx-text-fill: white;
+	-fx-background-radius: 8px;
+	-fx-padding: 5px 20px;
+	-fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 4, 0, 0, 1);
+}
+
+.button:hover {
+    -fx-background-color: accent-color;
+}
+
+
+
+.text-field {   /* TextFields */
+    -fx-background-radius: 6px;
+    -fx-padding: 7px 10px;
+    -fx-border-color: #111111;
+    -fx-border-width: 1.2px;
+    -fx-border-radius: 6px;
+    -fx-background-color: #ffffff;
+}
+
+.text-field:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+#accountNumberField{
+    -fx-font-size: 30px;
+    -fx-font-family: "Roboto";
+}
+
+#nameField{
+    -fx-font-family: "Inter Semibold";
+    -fx-font-size: 25px;
+}
+
+#emailField{
+    -fx-font-family: "Inter Semibold";
+    -fx-font-size: 25px;
+}

@@ -58,9 +58,23 @@ public class adminCreateAccount {
                 change.getControlNewText().matches("\\d{0,9}") ? change : null
         ));
 
-        firstDepositField.setTextFormatter(new TextFormatter<>(change ->
-                change.getControlNewText().matches("\\d*(\\.\\d{0,2})?") ? change : null
-        ));
+        firstDepositField.setTextFormatter(new TextFormatter<>(change -> {
+            String newText = change.getControlNewText();
+
+            if (newText.isEmpty()) {
+                return change;
+            }
+
+            if (newText.matches("[1-9]\\d{0,5}(\\.\\d{0,2})?")) {
+                return change;
+            }
+
+            if (newText.matches("0(\\.\\d{0,2})?")) {
+                return change;
+            }
+
+            return null;
+        }));
     }
 
     @FXML
@@ -72,6 +86,11 @@ public class adminCreateAccount {
             firstDepositField.getText().isEmpty()){
                 ShowOnScreen.showError("All fields must be filled");
                 return;
+        }
+
+        if(contactField.getText().length() != 9){
+            ShowOnScreen.showError("Invalid contact number.");
+            return;
         }
 
         double deposit = Double.parseDouble(firstDepositField.getText());

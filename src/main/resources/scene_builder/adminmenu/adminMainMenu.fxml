@@ -5,41 +5,41 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.adminmenu.adminMenu">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" stylesheets="@../../css/adminmenu/adminmenu.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.adminmenu.adminMenu">
    <children>
-      <Button focusTraversable="false" layoutX="200.0" layoutY="255.0" mnemonicParsing="false" onAction="#switchToAdminCreateAccount" prefHeight="50.0" prefWidth="300.0" text="Create Account">
+      <Button focusTraversable="false" layoutX="196.0" layoutY="289.0" mnemonicParsing="false" onAction="#switchToAdminCreateAccount" prefHeight="70.0" prefWidth="400.0" text="Create Account">
          <font>
-            <Font name="Arial Bold" size="20.0" />
+            <Font name="Arial Bold" size="30.0" />
          </font>
       </Button>
-      <Button focusTraversable="false" layoutX="200.0" layoutY="315.0" mnemonicParsing="false" onAction="#switchToAdminEditAccount" prefHeight="50.0" prefWidth="300.0" text="Edit Account Information">
+      <Button focusTraversable="false" layoutX="196.0" layoutY="369.0" mnemonicParsing="false" onAction="#switchToAdminEditAccount" prefHeight="70.0" prefWidth="400.0" text="Edit Account Information">
          <font>
-            <Font name="Arial Bold" size="20.0" />
+            <Font name="Arial Bold" size="30.0" />
          </font>
       </Button>
-      <Button focusTraversable="false" layoutX="200.0" layoutY="375.0" mnemonicParsing="false" onAction="#switchToAdminCloseAccount" prefHeight="50.0" prefWidth="300.0" text="Close Account">
+      <Button focusTraversable="false" layoutX="196.0" layoutY="449.0" mnemonicParsing="false" onAction="#switchToAdminCloseAccount" prefHeight="70.0" prefWidth="400.0" text="Close Account">
          <font>
-            <Font name="Arial Bold" size="20.0" />
+            <Font name="Arial Bold" size="30.0" />
          </font>
       </Button>
-      <Label alignment="CENTER" layoutY="70.0" prefHeight="116.0" prefWidth="700.0" text="Admin Menu" textAlignment="JUSTIFY">
+      <Label alignment="CENTER" layoutY="75.0" prefHeight="116.0" prefWidth="800.0" text="Admin Menu" textAlignment="JUSTIFY">
          <font>
-            <Font name="System Bold" size="60.0" />
+            <Font name="System Bold" size="70.0" />
          </font>
       </Label>
-      <Button focusTraversable="false" layoutX="200.0" layoutY="435.0" mnemonicParsing="false" onAction="#switchToAdminTransactionsHistory" prefHeight="50.0" prefWidth="300.0" text="Accounts Transactions">
+      <Button focusTraversable="false" layoutX="196.0" layoutY="529.0" mnemonicParsing="false" onAction="#switchToAdminTransactionsHistory" prefHeight="70.0" prefWidth="400.0" text="Accounts Transactions">
          <font>
-            <Font name="Arial Bold" size="20.0" />
+            <Font name="Arial Bold" size="30.0" />
          </font>
       </Button>
-      <Button focusTraversable="false" layoutX="200.0" layoutY="495.0" mnemonicParsing="false" onAction="#switchToResetPin" prefHeight="50.0" prefWidth="300.0" text="Reset Pin">
+      <Button focusTraversable="false" layoutX="196.0" layoutY="609.0" mnemonicParsing="false" onAction="#switchToResetPin" prefHeight="70.0" prefWidth="400.0" text="Reset Pin">
          <font>
-            <Font name="Arial Bold" size="20.0" />
+            <Font name="Arial Bold" size="30.0" />
          </font>
       </Button>
-      <Button fx:id="logoutClick" alignment="CENTER" focusTraversable="false" layoutX="557.0" layoutY="728.0" mnemonicParsing="false" onAction="#logoutAccount" prefHeight="37.0" prefWidth="98.0" text="Logout">
+      <Button fx:id="logoutClick" alignment="CENTER" focusTraversable="false" layoutX="628.0" layoutY="888.0" mnemonicParsing="false" onAction="#logoutAccount" prefHeight="46.0" prefWidth="130.0" text="Logout">
          <font>
-            <Font name="Arial Bold" size="20.0" />
+            <Font name="Arial Bold" size="25.0" />
          </font>
       </Button>
    </children>

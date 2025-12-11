@@ -44,7 +44,7 @@ public class createAccountMenuController {
     public void initialize() {
         nameField.setTextFormatter(new TextFormatter<>(change ->
                 change.getControlNewText().matches("[A-Za-z ]*") ? change : null
-        )); 
+        ));
 
         addressField.setTextFormatter(new TextFormatter<>(change ->
                 change.getControlNewText().matches("[A-Za-z0-9., -]*") ? change : null
@@ -58,9 +58,23 @@ public class createAccountMenuController {
                 change.getControlNewText().matches("\\d{0,9}") ? change : null
         ));
 
-        firstDepositField.setTextFormatter(new TextFormatter<>(change ->
-                change.getControlNewText().matches("\\d*(\\.\\d{0,2})?") ? change : null
-        ));
+        firstDepositField.setTextFormatter(new TextFormatter<>(change -> {
+            String newText = change.getControlNewText();
+
+            if (newText.isEmpty()) {
+                return change;
+            }
+
+            if (newText.matches("[1-9]\\d{0,5}(\\.\\d{0,2})?")) {
+                return change;
+            }
+
+            if (newText.matches("0(\\.\\d{0,2})?")) {
+                return change;
+            }
+
+            return null;
+        }));
     }
 
     @FXML

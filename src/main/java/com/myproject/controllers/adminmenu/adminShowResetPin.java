@@ -45,8 +45,7 @@ public class adminShowResetPin {
 		nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
 		accountNumberColumn.setCellValueFactory(new PropertyValueFactory<>("accountNumberWithDash"));
 
-		Setters.centerColumnAdmin(nameColumn);
-		Setters.centerColumnAdmin(accountNumberColumn);
+		Setters.centerColumnNumber(accountNumberColumn);
 
 		resetRequest = App.resetPinRequest;
 

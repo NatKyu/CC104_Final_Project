@@ -5,42 +5,47 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.usermenu.userMenuController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.usermenu.userMenuController">
    <children>
-      <Label alignment="CENTER" layoutY="53.0" prefHeight="88.0" prefWidth="700.0" text="Welcome to Manny Bank">
+      <Label alignment="CENTER" layoutY="68.0" prefHeight="15.0" prefWidth="800.0" text="Welcome to">
+         <font>
+            <Font name="Arial" size="45.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" focusTraversable="false" layoutX="280.0" layoutY="286.0" mnemonicParsing="false" onAction="#switchToUserDeposit" prefHeight="80.0" prefWidth="240.0" text="Deposit">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" focusTraversable="false" layoutX="280.0" layoutY="387.0" mnemonicParsing="false" onAction="#switchToUserWithdraw" prefHeight="80.0" prefWidth="240.0" text="Withdraw">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" focusTraversable="false" layoutX="280.0" layoutY="487.0" mnemonicParsing="false" onAction="#switchToUserBalance" prefHeight="80.0" prefWidth="240.0" text="Balance">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" focusTraversable="false" layoutX="280.0" layoutY="594.0" mnemonicParsing="false" onAction="#switchToUserTransactions" prefHeight="80.0" prefWidth="240.0" text="Transactions">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="logoutClick" alignment="CENTER" focusTraversable="false" layoutX="606.0" layoutY="894.0" mnemonicParsing="false" onAction="#logoutAccount" prefHeight="46.0" prefWidth="150.0" text="Logout">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" focusTraversable="false" layoutX="606.0" layoutY="841.0" mnemonicParsing="false" onAction="#switchToUserSettings" prefHeight="46.0" prefWidth="150.0" text="Settings">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutY="125.0" prefHeight="37.0" prefWidth="800.0" text="E-Manny Bank">
          <font>
             <Font name="Arial Bold" size="55.0" />
          </font>
       </Label>
-      <Button alignment="CENTER" focusTraversable="false" layoutX="230.0" layoutY="206.0" mnemonicParsing="false" onAction="#switchToUserDeposit" prefHeight="80.0" prefWidth="240.0" text="Deposit">
-         <font>
-            <Font name="Arial Bold" size="30.0" />
-         </font>
-      </Button>
-      <Button alignment="CENTER" focusTraversable="false" layoutX="230.0" layoutY="307.0" mnemonicParsing="false" onAction="#switchToUserWithdraw" prefHeight="80.0" prefWidth="240.0" text="Withdraw">
-         <font>
-            <Font name="Arial Bold" size="30.0" />
-         </font>
-      </Button>
-      <Button alignment="CENTER" focusTraversable="false" layoutX="230.0" layoutY="407.0" mnemonicParsing="false" onAction="#switchToUserBalance" prefHeight="80.0" prefWidth="240.0" text="Balance">
-         <font>
-            <Font name="Arial Bold" size="30.0" />
-         </font>
-      </Button>
-      <Button alignment="CENTER" focusTraversable="false" layoutX="230.0" layoutY="514.0" mnemonicParsing="false" onAction="#switchToUserTransactions" prefHeight="80.0" prefWidth="240.0" text="Transactions">
-         <font>
-            <Font name="Arial Bold" size="30.0" />
-         </font>
-      </Button>
-      <Button fx:id="logoutClick" alignment="CENTER" focusTraversable="false" layoutX="557.0" layoutY="728.0" mnemonicParsing="false" onAction="#logoutAccount" prefHeight="37.0" prefWidth="98.0" text="Logout">
-         <font>
-            <Font name="Arial Bold" size="20.0" />
-         </font>
-      </Button>
-      <Button alignment="CENTER" focusTraversable="false" layoutX="41.0" layoutY="728.0" mnemonicParsing="false" onAction="#switchToUserSettings" prefHeight="37.0" prefWidth="110.0" text="Settings">
-         <font>
-            <Font name="Arial Bold" size="20.0" />
-         </font>
-      </Button>
    </children>
 </AnchorPane>

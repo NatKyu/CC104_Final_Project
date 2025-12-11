@@ -61,6 +61,11 @@ public class adminLogin {
             return;
         }
 
+        if(!password.getText().equals(App.superAdmin.getAdminPassowrd())){
+            ShowOnScreen.showError("Incorrect password.");
+            return;       
+        }
+
 		System.out.print("--- Login as Admin ---\n\n");
         showSuccess(event);
     }

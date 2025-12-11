@@ -102,7 +102,7 @@ public class forgotPassword {
 
     public void showSuccess(ActionEvent event){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setHeaderText("PIN reset requested.\nAccount number: " + accountNumber);
+        alert.setHeaderText("PIN reset requested.\nAccount number: " + accountNumber + "\nWaiting for admins approval.");
         alert.setTitle("Success");
 
         Image icon = new Image("images/success.png");

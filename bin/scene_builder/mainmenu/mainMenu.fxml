@@ -6,41 +6,31 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.mainmenu.mainMenuController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" stylesheets="@../../css/mainmenu/mainmenu.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.mainmenu.mainMenuController">
    <children>
-      <Button focusTraversable="false" layoutX="321.0" layoutY="553.0" mnemonicParsing="false" onAction="#switchToCreateAccount" prefHeight="17.0" prefWidth="160.0" text="Create Account">
+      <Button fx:id="createAccount" focusTraversable="false" layoutX="320.0" layoutY="557.0" mnemonicParsing="false" onAction="#switchToCreateAccount" prefHeight="17.0" prefWidth="160.0" text="Create Account">
          <font>
-            <Font name="Arial Bold" size="10.0" />
+            <Font name="Arial Bold" size="15.0" />
          </font>
       </Button>
-      <Button fx:id="loginButton" focusTraversable="false" layoutX="276.0" layoutY="500.0" mnemonicParsing="false" onAction="#loginButtonClick" prefHeight="23.0" prefWidth="250.0" text="Login">
+      <Button fx:id="loginButton" focusTraversable="false" layoutX="275.0" layoutY="509.0" mnemonicParsing="false" onAction="#loginButtonClick" prefHeight="23.0" prefWidth="250.0" text="Login">
          <font>
             <Font name="Arial Bold" size="25.0" />
          </font>
       </Button>
-      <Label alignment="CENTER" layoutY="72.0" prefHeight="116.0" prefWidth="800.0" text="E-Manny Bank" textAlignment="JUSTIFY">
+      <Label fx:id="titleLabel" alignment="CENTER" layoutY="72.0" prefHeight="116.0" prefWidth="800.0" text="E-Manny Bank" textAlignment="JUSTIFY">
          <font>
             <Font name="System Bold" size="60.0" />
          </font>
       </Label>
-      <Label layoutY="944.0" prefHeight="42.0" prefWidth="800.0" text="CC104: Data Structures and Algorithm">
-         <font>
-            <Font name="MS Reference Sans Serif" size="15.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutY="944.0" prefHeight="42.0" prefWidth="800.0" text="ACTISM2-1">
-         <font>
-            <Font name="MS Reference Sans Serif" size="15.0" />
-         </font>
-      </Label>
-      <TextField fx:id="accountNumber" alignment="CENTER" focusTraversable="false" layoutX="151.0" layoutY="291.0" prefHeight="52.0" prefWidth="500.0">
+      <TextField fx:id="accountNumber" alignment="CENTER" focusTraversable="false" layoutX="175.0" layoutY="289.0" prefHeight="54.0" prefWidth="450.0">
          <font>
             <Font size="25.0" />
          </font>
       </TextField>
-      <Label layoutX="325.0" layoutY="264.0" text="Account Number:">
+      <Label alignment="CENTER" layoutY="253.0" prefHeight="23.0" prefWidth="800.0" text="Account Number:">
          <font>
-            <Font name="Arial Bold" size="20.0" />
+            <Font name="Arial Bold" size="25.0" />
          </font>
       </Label>
       <TextField fx:id="pin" alignment="CENTER" focusTraversable="false" layoutX="275.0" layoutY="390.0" prefHeight="52.0" prefWidth="250.0">
@@ -48,14 +38,14 @@
             <Font size="25.0" />
          </font>
       </TextField>
-      <Label layoutX="382.0" layoutY="363.0" text="Pin:">
+      <Label alignment="CENTER" layoutY="353.0" prefHeight="23.0" prefWidth="800.0" text="Pin:">
          <font>
-            <Font name="Arial Bold" size="20.0" />
+            <Font name="Arial Bold" size="25.0" />
          </font>
       </Label>
-      <Button focusTraversable="false" layoutX="320.0" layoutY="448.0" mnemonicParsing="false" onAction="#switchToForgotPassword" prefHeight="17.0" prefWidth="160.0" text="Forgot Pin">
+      <Button fx:id="forgotPin" focusTraversable="false" layoutX="320.0" layoutY="458.0" mnemonicParsing="false" onAction="#switchToForgotPassword" prefHeight="17.0" prefWidth="160.0" text="Forgot Pin">
          <font>
-            <Font name="Arial Bold" size="10.0" />
+            <Font name="Arial Bold" size="15.0" />
          </font>
       </Button>
    </children>

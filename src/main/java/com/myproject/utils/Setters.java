@@ -15,17 +15,7 @@ public class Setters {
 		return new String(output);
 	}
 
-	public static void centerColumnTransactions(TableColumn<?, ?> column){
-        column.setStyle(
-			"-fx-alignment: CENTER; " +
-			"-fx-font-size: 15px;"
-		);
-    }
-
-	public static void centerColumnAdmin(TableColumn<?, ?> column){
-        column.setStyle(
-			"-fx-alignment: CENTER; " +
-			"-fx-font-size: 20px;"
-		);
+	public static void centerColumnNumber(TableColumn<?, ?> column){
+        column.setStyle("-fx-alignment: CENTER;" + "-fx-font-family: Roboto;");
     }
 }

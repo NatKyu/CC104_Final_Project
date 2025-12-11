@@ -1,0 +1,52 @@
+* {
+    primary-color: #1E3A8A;
+    primary-light: #3B82F6;
+    accent-color: #60A5FA;
+    background-color: #F1F5F9;
+
+    text-color: #0F172A;
+	text-font: "Inter";
+}
+
+/* UI Background */
+.root{
+	-fx-background-color: background-color;
+}
+
+
+/* Labels */
+.label{
+	-fx-text-fill: text-color;
+	-fx-label-padding: 2px;
+	-fx-font-family: text-font;
+}
+
+
+
+/* Buttons */
+.button{
+	-fx-background-color: primary-light;
+	-fx-text-fill: white;
+	-fx-background-radius: 8px;
+	-fx-padding: 5px 20px;
+	-fx-cursor: hand;
+
+}
+
+.button:hover {
+    -fx-background-color: accent-color;
+}
+
+#loginButton{
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 4, 0, 0, 1);
+}
+
+#forgotPin{
+	-fx-background-color: background-color;
+	-fx-text-fill: black;
+}
+
+#createAccount{
+	-fx-background-color: background-color;
+	-fx-text-fill: black;
+}

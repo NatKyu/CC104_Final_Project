@@ -2,8 +2,8 @@ package com.myproject.utils.data;
 
 public class AdminInfo {
 
-	private String adminName = "@dmin";
-	private String adminPassword = "@dmin1234";
+	private String adminName = "qwer";
+	private String adminPassword = "1234";
 
 	public String getAdminName(){
 		return this.adminName;

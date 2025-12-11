@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.adminmenu.adminShowTransactionsHistory">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.adminmenu.adminShowTransactionsHistory">
    <children>
-      <Label alignment="CENTER" layoutY="80.0" prefHeight="44.0" prefWidth="700.0" text="View Transactions History" textAlignment="JUSTIFY">
+      <Label alignment="CENTER" layoutY="98.0" prefHeight="66.0" prefWidth="800.0" text="Users Transactions History" textAlignment="JUSTIFY">
          <font>
             <Font name="System Bold" size="45.0" />
          </font>
@@ -19,10 +19,10 @@
             <Font name="Arial Bold" size="20.0" />
          </font>
       </Button>
-      <TableView fx:id="table" focusTraversable="false" layoutX="50.0" layoutY="154.0" prefHeight="600.0" prefWidth="600.0">
+      <TableView fx:id="table" focusTraversable="false" layoutX="25.0" layoutY="219.0" prefHeight="700.0" prefWidth="750.0">
          <columns>
-            <TableColumn fx:id="nameColumn" editable="false" prefWidth="342.0" resizable="false" sortable="false" text="Name" />
-            <TableColumn fx:id="accountNumberColumn" editable="false" prefWidth="256.0" resizable="false" sortable="false" text="Account Number" />
+            <TableColumn fx:id="nameColumn" editable="false" prefWidth="400.0" resizable="false" sortable="false" text="Name" />
+            <TableColumn fx:id="accountNumberColumn" editable="false" prefWidth="350.0" resizable="false" sortable="false" text="Account Number" />
          </columns>
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />

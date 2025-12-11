@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.adminmenu.adminCloseAccount">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.controllers.adminmenu.adminCloseAccount">
    <children>
-      <Label alignment="CENTER" layoutY="85.0" prefHeight="0.0" prefWidth="700.0" text="Close Account Request">
+      <Label alignment="CENTER" layoutY="85.0" prefHeight="41.0" prefWidth="800.0" text="Close Account Request">
          <font>
             <Font name="Arial Bold" size="35.0" />
          </font>
@@ -23,27 +23,27 @@
             <Font name="Arial Bold" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="closeAccountButton" alignment="CENTER" focusTraversable="false" layoutX="264.0" layoutY="633.0" mnemonicParsing="false" onAction="#closeAccountButtonClick" prefHeight="37.0" prefWidth="200.0" text="Close Account">
+      <Button fx:id="closeAccountButton" alignment="CENTER" focusTraversable="false" layoutX="300.0" layoutY="752.0" mnemonicParsing="false" onAction="#closeAccountButtonClick" prefHeight="37.0" prefWidth="200.0" text="Close Account">
          <font>
             <Font name="Arial Bold" size="20.0" />
          </font>
       </Button>
-      <TextField fx:id="reasonField" alignment="TOP_LEFT" editable="false" focusTraversable="false" layoutX="50.0" layoutY="300.0" prefHeight="300.0" prefWidth="600.0">
+      <TextField fx:id="reasonField" alignment="TOP_LEFT" editable="false" focusTraversable="false" layoutX="60.0" layoutY="329.0" prefHeight="350.0" prefWidth="680.0">
          <font>
-            <Font size="20.0" />
+            <Font size="25.0" />
          </font>
       </TextField>
-      <Label layoutX="50.0" layoutY="277.0" text="Reason for account closing:">
+      <Label layoutX="64.0" layoutY="306.0" text="Reason for account closing:">
          <font>
             <Font name="Arial Bold" size="20.0" />
          </font>
       </Label>
-      <Label fx:id="accountNumber" alignment="CENTER" layoutY="200.0" prefHeight="0.0" prefWidth="700.0" text="(Account Number)">
+      <Label fx:id="accountNumber" alignment="CENTER" layoutY="200.0" prefHeight="36.0" prefWidth="800.0" text="(Account Number)">
          <font>
             <Font name="Arial" size="30.0" />
          </font>
       </Label>
-      <Label fx:id="name" alignment="CENTER" layoutY="150.0" prefHeight="0.0" prefWidth="700.0" text="&quot;Name&quot;">
+      <Label fx:id="name" alignment="CENTER" layoutY="150.0" prefHeight="36.0" prefWidth="800.0" text="&quot;Name&quot;">
          <font>
             <Font name="Arial" size="30.0" />
          </font>
