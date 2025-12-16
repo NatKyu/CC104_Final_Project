@@ -1,8 +1,8 @@
 package com.myproject.controllers.usermenu;
 
-import com.myproject.utils.ShowOnScreen;
-import com.myproject.utils.data.*;
 import com.myproject.app.App;
+import com.myproject.utils.*;
+import com.myproject.utils.data.*;
 import com.myproject.controllers.mainmenu.*;
 
 import java.io.IOException;
@@ -73,7 +73,7 @@ public class userSettingsCloseAccount {
         }
 
         AdminCloseAccountMessages toSend = new AdminCloseAccountMessages(message, currUser.getAcctNumber());
-        App.adminCloseAccountMessages.addLast(toSend);
+        App.adminCloseAccountMessages.push(toSend);
         currUser.addCloseAccountSend();
         showSuccess(event);
 	}

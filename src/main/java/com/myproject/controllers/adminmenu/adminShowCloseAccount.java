@@ -54,7 +54,7 @@ public class adminShowCloseAccount {
 		table.setPlaceholder(new Label("No user accounts to show."));
 		table.getItems().clear();
 
-		LinkedList.Node temp = App.adminCloseAccountMessages.head;
+		Stack.Node temp = App.adminCloseAccountMessages.top;
 
 		while(temp != null){
 			if(temp.data instanceof AdminCloseAccountMessages){

@@ -61,6 +61,11 @@ public class userSettingsChangePin {
 				return;
 		}
 
+        if(!currentPinField.getText().equals(currUser.getAcctPin())){
+            ShowOnScreen.showError("Current PIN incorrect.");
+            return;
+        }
+
         if(currentPinField.getText().length() != 4 ||
 			newPinField.getText().length() != 4 ||
 			reEnterNewPinField.getText().length() != 4){

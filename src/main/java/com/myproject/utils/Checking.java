@@ -55,7 +55,7 @@ public class Checking {
 
 	public static AdminCloseAccountMessages getUserCloseAccount(String toCheck){
 
-		for(LinkedList.Node temp = App.adminCloseAccountMessages.head; temp != null; temp = temp.next){
+		for(Stack.Node temp = App.adminCloseAccountMessages.top; temp != null; temp = temp.next){
 
 			if(temp.data instanceof AdminCloseAccountMessages){
 				AdminCloseAccountMessages curr = (AdminCloseAccountMessages) temp.data;

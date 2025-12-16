@@ -9,7 +9,7 @@
             "name": "Run App.java",
             "request": "launch",
             "mainClass": "com.myproject.app.App",
-            "vmArgs": "--module-path lib/lib --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--enable-native-access=javafx.graphics --module-path lib/lib --add-modules javafx.controls,javafx.fxml"
         }
     ]
 }

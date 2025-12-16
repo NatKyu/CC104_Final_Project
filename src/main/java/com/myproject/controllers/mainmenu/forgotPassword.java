@@ -2,8 +2,7 @@ package com.myproject.controllers.mainmenu;
 
 import com.myproject.app.App;
 import com.myproject.utils.*;
-import com.myproject.utils.data.RequestResets;
-import com.myproject.utils.data.UserInfo;
+import com.myproject.utils.data.*;
 
 import java.io.IOException;
 import java.util.Optional;
@@ -36,10 +35,6 @@ public class forgotPassword {
     private TextField accountNumberField;
     @FXML
     private TextField emailField;
-    @FXML
-    private TextField contactField;
-    @FXML
-    private TextField firstDepositField;
     @FXML
     private Button submitButton;
 
@@ -93,7 +88,7 @@ public class forgotPassword {
         accountNumber = currUser.getAcctNumberWithDash();
 
 		RequestResets add = new RequestResets(currUser.getAcctNumber(), currUser.getAcctName(), currUser.getAcctEmail(), currUser.getAcctNumberWithDash());
-		App.resetPinRequest.addLast(add);
+		App.resetPinRequest.push(add);
 
         System.out.printf("--- PIN reset requested (%s) ---\n\n", currUser.getAcctNumberWithDash());
 

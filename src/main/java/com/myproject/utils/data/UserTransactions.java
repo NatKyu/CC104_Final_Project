@@ -7,7 +7,6 @@ public class UserTransactions {
     private String deposit;
     private String balance;
 
-
     public UserTransactions(String date, String time, String withdraw, String deposit, String balance){
         this.date = date;
         this.time = time;

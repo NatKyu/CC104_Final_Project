@@ -161,7 +161,7 @@ public class FileEditor {
                     }
 
                     AdminCloseAccountMessages data = new AdminCloseAccountMessages(message, acctNum);
-                    App.adminCloseAccountMessages.addLast(data);
+                    App.adminCloseAccountMessages.push(data);
 
                 }catch(IndexOutOfBoundsException e){
                     continue;
@@ -202,7 +202,7 @@ public class FileEditor {
 
                     RequestResets data = new RequestResets(acctNum, name, email, withDash);
 
-                    App.resetPinRequest.addLast(data);
+                    App.resetPinRequest.push(data);
 
                 }catch(IndexOutOfBoundsException e){
                     continue;
@@ -309,7 +309,7 @@ public class FileEditor {
         try(FileWriter writer = new FileWriter(filePath)){
             String toWrite;
 
-            for(LinkedList.Node temp = App.adminCloseAccountMessages.head; temp != null; temp = temp.next){
+            for(Stack.Node temp = App.adminCloseAccountMessages.top; temp != null; temp = temp.next){
                 AdminCloseAccountMessages data = (AdminCloseAccountMessages) temp.data;
 
                 toWrite = assignAdmin(data);
@@ -338,7 +338,7 @@ public class FileEditor {
         try(FileWriter writer = new FileWriter(filePath)){
             String toWrite;
 
-            for(LinkedList.Node temp = App.resetPinRequest.head; temp != null; temp = temp.next){
+            for(Stack.Node temp = App.resetPinRequest.top; temp != null; temp = temp.next){
                 RequestResets data = (RequestResets) temp.data;
                 toWrite = assignResetRequest(data);
 

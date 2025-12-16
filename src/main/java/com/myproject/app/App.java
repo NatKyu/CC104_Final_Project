@@ -2,7 +2,7 @@ package com.myproject.app;
 
 import com.myproject.utils.*;
 import com.myproject.utils.data.AdminInfo;
-    
+
 import java.util.Optional;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -18,8 +18,8 @@ public class App extends Application {
 
     public static LinkedList bank = new LinkedList();
     public static LinkedList transactions = new LinkedList();
-    public static LinkedList adminCloseAccountMessages = new LinkedList();
-    public static LinkedList resetPinRequest = new LinkedList();
+    public static Stack adminCloseAccountMessages = new Stack();
+    public static Stack resetPinRequest = new Stack();
 
     public static AdminInfo superAdmin = new AdminInfo();
 

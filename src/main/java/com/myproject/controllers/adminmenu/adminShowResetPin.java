@@ -28,7 +28,7 @@ public class adminShowResetPin {
     private Parent root;
 
 	private LinkedList curr = App.bank;
-	private LinkedList resetRequest;
+	private Stack resetRequest;
 
 	private RequestResets selectedAccount;
 	private String accountNumber;
@@ -61,7 +61,7 @@ public class adminShowResetPin {
 	}
 
 	private void loadAccounts(){
-		LinkedList.Node temp = resetRequest.head;
+		Stack.Node temp = resetRequest.top;
 		table.setPlaceholder(new Label("No user accounts to show."));
 		table.getItems().clear();
 
@@ -125,7 +125,7 @@ public class adminShowResetPin {
 
 					System.out.printf("--- \"%s\" (%s) PIN reset to default ---\n\n", curr1.getAcctName(), curr1.getAcctNumberWithDash());
 
-					resetRequest.deleteByAccountNumber(selectedAccount.getAccountNumber());
+					resetRequest.popByAccountNumber(selectedAccount.getAccountNumber());
 
 					showSuccess();
 					return;

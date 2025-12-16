@@ -1,12 +1,11 @@
 package com.myproject.controllers.adminmenu;
 
-import java.io.IOException;
-import java.util.Optional;
-
 import com.myproject.app.App;
 import com.myproject.utils.*;
 import com.myproject.utils.data.UserInfo;
 
+import java.io.IOException;
+import java.util.Optional;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -106,5 +105,4 @@ public class adminLogin {
             }
         }
     }
-
 }

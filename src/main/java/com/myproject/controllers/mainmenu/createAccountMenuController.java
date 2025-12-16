@@ -113,12 +113,13 @@ public class createAccountMenuController {
         };
 
         UserInfo userInfo = new UserInfo(toSave[0], toSave[1], toSave[2], deposit, toSave[3], toSave[4], toSave[5], toSave[6], toSave[7]);
-
         App.bank.addLast(userInfo);
+        App.bank.sort();
 
         LinkedList userTransaction = new LinkedList();
         userTransaction.addFirst(accountNumber);
         App.transactions.addLast(userTransaction);
+
         System.out.println("--- NEW USER ADDED ---\n");
 
         showSuccess(event);

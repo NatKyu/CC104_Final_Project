@@ -52,7 +52,7 @@ public class adminCloseAccount {
     public void closeAccountButtonClick(ActionEvent event){
 		curr.setAccountStatus("Closed");
 
-        App.adminCloseAccountMessages.deleteByAccountNumber(curr.getAcctNumber());
+        App.adminCloseAccountMessages.popByAccountNumber(curr.getAcctNumber());
 
         System.out.printf("--- Account Closed \"%s\" (%s) ---\n\n", nameField.getText(), accountNumberField.getText());
 
