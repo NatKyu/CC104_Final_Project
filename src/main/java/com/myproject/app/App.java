@@ -43,10 +43,10 @@ public class App extends Application {
             exitApp(stage);
         });
 
-        FileEditor.loadData("C:/Users/63950/Desktop/VScode/JavaProjects/CC104_Final_Project/src/main/resources/user_data/data.txt");
-        FileEditor.loadTransactions("C:/Users/63950/Desktop/VScode/JavaProjects/CC104_Final_Project/src/main/resources/user_data/transactions.txt");
-        FileEditor.loadAdminMessages("C:/Users/63950/Desktop/VScode/JavaProjects/CC104_Final_Project/src/main/resources/admin/adminData.txt");
-        FileEditor.loadResetRequest("C:/Users/63950/Desktop/VScode/JavaProjects/CC104_Final_Project/src/main/resources/user_data/resetRequest.txt");
+        FileEditor.loadData("src/main/resources/user_data/data.txt");
+        FileEditor.loadTransactions("src/main/resources/user_data/transactions.txt");
+        FileEditor.loadAdminMessages("src/main/resources/admin/adminData.txt");
+        FileEditor.loadResetRequest("src/main/resources/user_data/resetRequest.txt");
         stage.show();
     }
 
@@ -62,10 +62,10 @@ public class App extends Application {
         Optional<ButtonType> result = alert.showAndWait();
 
         if (result.isPresent() && result.get() == ButtonType.OK) {
-            FileEditor.saveData("C:/Users/63950/Desktop/VScode/JavaProjects/CC104_Final_Project/src/main/resources/user_data/data.txt");
-            FileEditor.saveTransactions("C:/Users/63950/Desktop/VScode/JavaProjects/CC104_Final_Project/src/main/resources/user_data/transactions.txt");
-            FileEditor.saveAdminMessages("C:/Users/63950/Desktop/VScode/JavaProjects/CC104_Final_Project/src/main/resources/admin/adminData.txt");
-            FileEditor.saveResetRequest("C:/Users/63950/Desktop/VScode/JavaProjects/CC104_Final_Project/src/main/resources/user_data/resetRequest.txt");    
+            FileEditor.saveData("src/main/resources/user_data/data.txt");
+            FileEditor.saveTransactions("src/main/resources/user_data/transactions.txt");
+            FileEditor.saveAdminMessages("src/main/resources/admin/adminData.txt");
+            FileEditor.saveResetRequest("src/main/resources/user_data/resetRequest.txt");    
             stage1.close();
             stage.close();
         }
