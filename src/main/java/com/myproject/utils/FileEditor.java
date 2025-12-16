@@ -308,8 +308,13 @@ public class FileEditor {
 
         try(FileWriter writer = new FileWriter(filePath)){
             String toWrite;
+            Stack pansamantala = new Stack();
 
             for(Stack.Node temp = App.adminCloseAccountMessages.top; temp != null; temp = temp.next){
+                pansamantala.push(temp.data);
+            }
+
+            for(Stack.Node temp = pansamantala.top; temp != null; temp = temp.next){
                 AdminCloseAccountMessages data = (AdminCloseAccountMessages) temp.data;
 
                 toWrite = assignAdmin(data);
@@ -337,8 +342,13 @@ public class FileEditor {
 
         try(FileWriter writer = new FileWriter(filePath)){
             String toWrite;
+            Stack pansamantala = new Stack();
 
             for(Stack.Node temp = App.resetPinRequest.top; temp != null; temp = temp.next){
+                pansamantala.push(temp.data);
+            }
+
+            for(Stack.Node temp = pansamantala.top; temp != null; temp = temp.next){
                 RequestResets data = (RequestResets) temp.data;
                 toWrite = assignResetRequest(data);
 
